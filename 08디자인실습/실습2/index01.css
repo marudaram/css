@@ -1,0 +1,129 @@
+* {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none;}
+img {max-width: 100%; height: auto;}
+
+#main_header {
+    width: 960px;
+    margin: 0 auto;
+    height: 160px;
+    box-sizing: border-box;
+    position: relative; /* position의 두번째 법칙 */
+}
+
+#main_header .title {
+    position: absolute; /* position의 첫번째 법칙 */
+    left: 0;
+    top: 50px;
+}
+
+
+#main_header .main {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#main_header .main ul {
+    overflow: hidden;
+}
+#main_header .main ul li {
+    float: left;
+}
+/* display해도 되고, 아래처럼 float으로 쌓고, a태그의 크기를 넓혀도 됨 */
+#main_header .main ul li a {
+    display: inline-block;
+    padding: 2px 10px;
+    border: 1px solid #777;
+    /* border-radius: 10px 0 0 10px; 모든 a태그에 주면 안됨 */
+}
+#main_header .main ul li:nth-child(1) a {
+    border-radius: 10px 0 0 10px;
+}
+#main_header .main ul li:nth-child(4) a {
+    border-radius: 0 10px 10px 0;
+}
+
+
+#main_header .bot {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+#main_header .bot ul{
+    overflow: hidden;
+}
+#main_header .bot ul li{
+    float: left;
+}
+#main_header .bot ul li a {
+    display: inline-block;
+    padding: 2px 10px;
+    border: 1px solid #777;
+}
+#main_header .bot ul li:nth-child(1) a {
+    border-radius: 10px 0 0 10px;
+}
+#main_header .bot ul li:nth-child(4) a {
+    border-radius: 0 10px 10px 0;
+}
+
+
+#main_section {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#main_section .left {
+    float: left;
+    width: 750px;
+}
+#main_section .left article {
+    border: 1px solid #777;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+#main_section .right {
+    float: right;
+    width: 200px;
+}
+#main_section .right .buttons {
+    overflow: hidden;
+}
+#main_section .right .buttons label {
+    float: left;
+    width: 50%;
+    text-align: center;
+    background-color: rgb(86, 99, 112);
+    color: white;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+#main_section .right .tab_item .item{
+    display: block; /* a가 인라인이여서 전체적으로 감싸도록 block으로 만듦 */
+    overflow: hidden;
+    border: 1px solid #777;/* border를 다 주고 */
+    border-top: 0; /* top을 0으로 줘서 덮어버리겠다 */
+    padding: 10px;
+}
+.tab_item .item .thum {
+    float: left;
+}
+.tab_item .item .content {
+    float: left;
+    margin-left: 10px;
+}
+.tab_item ul li .item .content strong {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* strong은 인라인이어서 block으로 바꿔야 너비가 들어감 */
+    display: block;
+    width: 100px;
+}
+
+#main_footer {
+    width: 960px;
+    border: 1px solid #777;
+    text-align: center;
+    padding: 30px 50px;
+}

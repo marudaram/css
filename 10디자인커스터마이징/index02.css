@@ -1,0 +1,183 @@
+* {padding: 0; margin: 0; list-style: none; font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box;}
+img {max-width: 100%; height: auto;}
+
+#main-wrap .container h2 {
+    font-size: 24px;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.detail-info {
+    min-height: 345px;
+}
+
+.prod-detail .title {
+    font-size: 25px;
+    font-weight: 500;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    padding-bottom: 10px;
+}
+
+.prod-detail .price {
+    font-weight: bold;
+    font-size: 30px;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    padding-bottom: 10px;
+}
+
+.prod-detail .delivery {
+    color: rgb(117, 117, 117);
+    margin: 0 0 10px;
+    float: left;
+    font-size: 14px;
+}
+
+.detail-control {
+    height: 150px;
+}
+
+.detail-control .total-price{
+    overflow: hidden;
+    border: 1px solid white;
+    box-sizing: border-box;
+   height: 55px;
+}
+
+.total-price strong {
+    float: right;
+}
+
+.detail-control .total-price .left {
+    color: black;
+    float: left;
+    font-size: 20px;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.detail-control .total-price .right {
+    float: right;
+    font-size: 30px;
+    margin-top: 5px;
+    width: 50%;
+    height: 60px;
+}
+
+.detail-control .order .left , .detail-control .order .right {
+    width: 50%;
+    height: 60px;
+    font-size: 18px;
+    
+}
+
+.detail-control .order .left {
+    float: left;
+    
+}
+.detail-control .order .right {
+    float: right;
+    
+}
+.btn {
+    border-radius: 0;
+    
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.reply-wrap {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.reply-wrap .reply-image {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    
+}
+
+.reply-wrap .reply-content {
+    margin-left: 60px;
+}
+
+.reply-content .form-control {
+    border-radius: 0;
+    margin: 0 0 10px;
+    
+}
+
+.reply-group{
+    overflow: hidden;
+}
+
+.reply-group .reply-input {
+    float: left;
+}
+
+.reply-group .right {
+    float: right;
+}
+
+.reply-group .reply-input input {
+    display: block;
+    width: 200px;
+    padding: 6px 12px;
+    margin: 0 0 5px;
+}
+.reply-group .reply-button {
+    float: right;
+} 
+
+.reply-group {
+
+    overflow: hidden;
+}
+
+.reply-group small {
+    margin-left: 10px;
+}
+
+.reply-group .left {
+   
+    float: left;
+}
+
+.reply-group .right {
+
+    float: right;
+}
+
+.reply-group .right .glyphicon-pencil {
+    float: right;
+    font-size: 14px;
+    color: #666565;
+}
+.reply-group .right .glyphicon-remove {
+    float: right;
+    font-size: 14px;
+    color: #666565;
+}
+
+
+.clearfix {
+    font-size: 14px;
+    margin-left: 60px;
+    
+}
